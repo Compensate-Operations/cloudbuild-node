@@ -1,4 +1,4 @@
-FROM node:18.10.0-alpine
+FROM node:16.18.0-alpine
 
 # NB: Some underlying Node dependencies have an indirect dependency on Python
 # in order to be built (yes, no kidding), more specifically have a dependency
