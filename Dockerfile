@@ -10,5 +10,6 @@ RUN apk --no-cache --virtual build-dependencies add \
     python3 \
     make \
     bash \
-    g++
+    g++ \
+    git
 
