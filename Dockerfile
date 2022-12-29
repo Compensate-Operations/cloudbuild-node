@@ -1,15 +1,7 @@
-FROM node:16.19.0-alpine
+FROM node:18.12.0-alpine
 
-# NB: Some underlying Node dependencies have an indirect dependency on Python
-# in order to be built (yes, no kidding), more specifically have a dependency
-# on node-gyp.
-# Alpine-based images are very minimal and don't come with Python, thus the following
-# NB: --virtual bundles all listed packages into 'build-dependencies' virtual package
-# in order to remove them at once with apk
-RUN apk --no-cache --virtual build-dependencies add \
-    python3 \
+RUN apk --no-cache add \
     make \
     bash \
-    g++ \
     git
 
