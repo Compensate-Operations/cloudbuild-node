@@ -7,6 +7,17 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    target-branch: "node-16"
+    reviewers:
+      - "magandrez"
+      - "benmarsden"
+      - "woodwoerk"
+      - "lbinscheck"
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    target-branch: "node-18"
     reviewers:
       - "magandrez"
       - "benmarsden"
