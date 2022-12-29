@@ -1,7 +1,19 @@
-# Google Cloud Builder for Firebase with Node
+# Google Cloud Builder Node
 
 This is just another Node image. It can be used as a base image for a Cloud
 Build step that makes use of `yarn`.
+
+## Branches
+
+This repository is branched into two main branches to support two major Node
+versions:
+
+- [Node 16](https://github.com/Compensate-Operations/cloudbuild-node/tree/node-16)
+- [Node 18](https://github.com/Compensate-Operations/cloudbuild-node/tree/node-18)
+
+Each of the branches builds respective images, and said branches are not
+expected to be merged to the main branch, but are long-lived branches. The
+manner in which images are build remains the same.
 
 ## Develop
 
