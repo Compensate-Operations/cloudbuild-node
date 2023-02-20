@@ -13,6 +13,8 @@ updates:
       - "benmarsden"
       - "woodwoerk"
       - "lbinscheck"
+    ignore:
+      versions: ["18"]
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
