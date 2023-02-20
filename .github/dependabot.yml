@@ -14,7 +14,8 @@ updates:
       - "woodwoerk"
       - "lbinscheck"
     ignore:
-      versions: ["18"]
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
