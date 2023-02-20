@@ -22,4 +22,16 @@ Requirements:
 
 Build:
 
-See separate README for each Node branch.
+Upon editing the Dockerfile, build and tag the image for the repository that
+will host it:
+
+```sh
+$ docker build -t eu.gcr.io/compensate-infrastructure/node:X.Y.Z
+```
+
+Finally push all the new tags
+
+```sh
+$ docker push eu.gcr.io/compensate-infrastructure/node:X.Y.Z
+```
+
